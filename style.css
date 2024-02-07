@@ -1,0 +1,282 @@
+    * {
+        background-color: black;
+        margin: 0;
+        padding: 0;
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-family: 'Roboto', sans-serif;
+        text-decoration: none;
+    }
+
+    
+    .betSeteK iframe {
+        border: 2px solid #00BFFF; /* Define a cor da borda como vermelho (#ff0000) e a largura como 2px */
+    }
+
+
+    .back {
+        background-color: black;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .quadrado-grande {
+        margin-bottom: 80px;
+    }
+
+    .quadrados {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin-bottom: 650px;
+    }
+
+    .quadrado-grande {
+        width: 250px;
+        height: 250px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: -240px;
+    }
+
+
+    .btn-Gerar-Hack {
+        background-color: #00008b;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+
+    .btn-acessar-plataforma {
+        display: inline-block;
+        padding: 10px 10px;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
+        background-color: green;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        max-width: 200px;
+        /* adicione essa linha para limitar a largura do botão */
+        margin-top: 20px
+    }
+
+
+    .quadrado-vazio {
+        width: 60px;
+        height: 60px;
+        margin: 5px;
+        border: 2px solid blue;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #000000;
+    }
+
+    .circle {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #00bfff;
+    }
+
+    .linha {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .button-group {
+        display: flex;
+        justify-content: center;
+    }
+
+    .square-group {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .square {
+        width: 50px;
+        height: 50px;
+        background-color: blue;
+        margin: 0 10px;
+    }
+
+    #hackGerado {
+
+        text-align: center;
+        color: white;
+        background-color: black;
+        border-radius: 20px;
+    }
+
+    #outroTexto {
+        position: relative;
+        top: 480px;
+        /* ou outro valor, conforme necessário */
+    }
+
+
+
+    #logo {
+        position: fixed;
+        top: 120px;
+        justify-content: center;
+    }
+
+    .botao {
+        align-items: center;
+
+    }
+
+    .tk {
+        color: white;
+        background-color: chartreuse;
+        padding: 15px;
+        border-radius: 5px;
+        border: none;
+    }
+
+    .botao {
+        color: white;
+        background-color: #218838;
+        border-radius: 5px;
+        padding: 18px;
+        padding-left: 60px;
+        padding-right: 60px;
+        display: flex;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .six {
+        padding-top: 10px;
+        margin: 10px;
+    }
+
+    .sixsix {
+        color: white;
+        background-color: #f01810;
+        border-radius: 5px;
+        padding: 18px;
+        padding-left: 60px;
+        padding-right: 60px;
+        display: flex;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+        
+    }
+
+    .box {
+        padding-top: 10px;
+        margin: 10px;
+    }
+
+    .pla {
+        color: white;
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+    .ff {
+        color: white;
+        font-size: 12px;
+        font-weight: bold;
+        text-decoration: #00bfff;
+    }
+
+    .cntt {
+        color: rgb(255, 255, 255);
+        background-color: rgb(151, 8, 8);
+        padding: 8px;
+        border-radius: 20px;
+        border: none;
+    }
+    .pla {
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+    }
+    p {
+        font-size: 1.10rem;
+    }
+
+    .blinking-text {
+        animation: blink 1s linear infinite;
+        color: red;
+    }
+
+    @keyframes blink {
+        0%,
+        50% {
+            opacity: 1;
+        }
+        51%,
+        100% {
+            opacity: 0;
+        }
+    }
+
+    .animated-text {
+        animation: fadeInOut 3s linear infinite;
+        color: green;
+    }
+
+    @keyframes fadeInOut {
+        0%,
+        100% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+    }
+
+    pre {
+    display: inline-block;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 5%; /* Ajuste o valor 'top' para posicionar o texto mais perto do topo da página */
+    transform: translate(-50%, 0);
+    }
+
+    .falling-money {
+        font-size: 1.3rem;
+        position: absolute;
+        animation: fall linear infinite;
+        left: 18px;
+        color: rgb(2, 12, 148);
+        background: none;
+    }
+
+    @keyframes fall {
+        0% {
+            top: -50px;
+            opacity: 0;
+        }
+        5% {
+            opacity: 1;
+        }
+        100% {
+            top: 100%;
+            opacity: 0;
+        }
+    }

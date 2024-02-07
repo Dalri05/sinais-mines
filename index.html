@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,500;1,600&family=Roboto:ital,wght@0,700;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body id="page-top">
+
+    <div class="col-12 col-md-12 col-lg-12">
+        <center>
+            <img class="login" src="https://ohackdomines.online/images/63ffcaa9aed37-xs.png"
+                style="max-width: 200px;" />
+        </center>
+    </div>
+    <div id="outroTexto"></div>
+    <div class="col-md-12 col-lg-12">
+        <div id="hackGerado"></div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-12">
+        <div class="linha">
+            <div class="quadrado-vazio">
+                <div class="circle"></div>
+            </div>
+            <div class="quadrado-vazio">
+                <div class="circle"></div>
+            </div>
+            <div class="quadrado-vazio">
+                <div class="circle"></div>
+            </div>
+            <div class="quadrado-vazio">
+                <div class="circle"></div>
+            </div>
+            <div class="quadrado-vazio">
+                <div class="circle"></div>
+            </div>
+        </div>
+        <div class="linha">
+            <div class="quadrado-vazio">
+                <div class="circle"></div>
+            </div>
+            <div class="quadrado-vazio">
+                <div class="circle"></div>
+            </div>
+            <div class="quadrado-vazio">
+                <div class="circle"></div>
+            </div>
+            <div class="quadrado-vazio">
+                <div class="circle"></div>
+            </div>
+            <div class="quadrado-vazio">
+                <div class="circle"></div>
+            </div>
+        </div>
+        <div class="linha">
+            <div class="quadrado-vazio">
+                <div class="circle"></div>
+            </div>
+            <div class="quadrado-vazio">
+                <div class="circle"></div>
+            </div>
+            <div class="quadrado-vazio">
+                <div class="circle"></div>
+            </div>
+            <div class="quadrado-vazio">
+                <div class="circle"></div>
+            </div>
+            <div class="quadrado-vazio">
+                <div class="circle"></div>
+            </div>
+        </div>
+        <div class="linha">
+            <div class="quadrado-vazio">
+                <div class="circle"></div>
+            </div>
+            <div class="quadrado-vazio">
+                <div class="circle"></div>
+            </div>
+            <div class="quadrado-vazio">
+                <div class="circle"></div>
+            </div>
+            <div class="quadrado-vazio">
+                <div class="circle"></div>
+            </div>
+            <div class="quadrado-vazio">
+                <div class="circle"></div>
+            </div>
+        </div>
+        <div class="linha">
+            <div class="quadrado-vazio">
+                <div class="circle"></div>
+            </div>
+            <div class="quadrado-vazio">
+                <div class="circle"></div>
+            </div>
+            <div class="quadrado-vazio">
+                <div class="circle"></div>
+            </div>
+            <div class="quadrado-vazio">
+                <div class="circle"></div>
+            </div>
+            <div class="quadrado-vazio">
+                <div class="circle"></div>
+            </div>
+        </div>
+    </div>
+    <center>
+        <div class="six">
+            <button id="gerarBtn" class="botao">
+                Gerar Hacker</button>
+            <br>
+        </div>
+    
+        <div class="box">
+            <center>
+                <div class="betSeteK">
+                    <iframe src="https://biri.bet/?r=fnitxoop" width="800" height="600"></iframe>
+                </div>
+            </center>
+        </div>
+
+
+
+        <div id="hackGerado"></div>
+
+        <body>
+
+            <!-- #-----------------------------------------# -->
+            </div>
+            </header>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+            <!-- Core theme JS-->
+            <script src="js/scripts.js"></script>
+            <script>
+                const gerarBtn = document.getElementById("gerarBtn");
+
+                gerarBtn.addEventListener("click", gerarImagens);
+
+                function inicializarTemporizador() {
+                    // código para iniciar o temporizador aqui
+                }
+
+                const outroTexto = document.getElementById("outroTexto");
+
+                let imagensGeradas = [];
+
+                function gerarImagens() {
+                    // Desabilita o botão "Gerar Hack" e muda o texto para "Aguarde..."
+                    gerarBtn.disabled = true;
+                    gerarBtn.innerText = "Aguarde...";
+
+                    // Define o tempo total do temporizador em milissegundos
+                    const tempoTotal = 90000; // 90 segundos
+
+                    // Define o tempo inicial como o tempo atual
+                    const inicioTempo = Date.now();
+
+                    // Define uma função para atualizar o temporizador a cada segundo
+                    const atualizarTemporizador = setInterval(() => {
+                        const segundosRestantes = Math.ceil((tempoTotal - Date.now() + inicioTempo) / 1000);
+                        gerarBtn.innerText = `AGUARDE ${segundosRestantes}`;
+
+                        // Quando o temporizador chegar a zero, limpa o intervalo e reabilita o botão
+                        if (segundosRestantes <= 0) {
+                            clearInterval(atualizarTemporizador);
+                            gerarBtn.disabled = false;
+                            gerarBtn.innerText = "Gerar Sinal";
+                        }
+                    }, 1000);
+
+                    const numImagens = Math.floor(Math.random() * 5) + 2; // gera um número aleatório entre 3 e 9
+                    const quadradosVazios = Array.from(document.querySelectorAll(".quadrado-vazio"));
+                    const hackGerado = document.getElementById("hackGerado");
+                    hackGerado.innerText = "";
+                    const numMinas = Math.floor(Math.random() * 3) + 2; // gera um número aleatório entre 2 e 4
+                    const numTentativas = Math.floor(Math.random() * 5) + 2; // gera um número aleatório entre 1 e 5
+                    hackGerado.innerText += `\n💣APOSTAR: ${numMinas} MINAS\n\n`
+
+
+                    // Define um tempo para esperar antes de recarregar a página em milissegundos
+                    const tempoRecarregarPagina = 90000;
+
+                    // Espera o tempo definido antes de recarregar a página
+                    setTimeout(() => {
+                        location.reload();
+                    }, tempoRecarregarPagina);
+
+                    for (let i = 0; i < numImagens; i++) {
+                        const quadrado = quadradosVazios[Math.floor(Math.random() * quadradosVazios.length)];
+                        const imagem = document.createElement("img");
+                        imagem.src = "images/estrelaa.png"; // substitua pelo caminho para a imagem que você deseja usar
+                        quadrado.querySelector(".circle").remove(); // remove o círculo do quadrado selecionado
+                        quadrado.appendChild(imagem);
+                        quadradosVazios.splice(quadradosVazios.indexOf(quadrado), 1); // remove o quadrado selecionado da lista de quadrados vazios
+                    }
+
+                    gerarBtn.disabled = true; // desabilita o botão "Gerar Hacker" por 60
+                    segundos
+                    setTimeout(() => {
+                        gerarBtn.disabled = false;
+                    }, 60000);
+
+
+                    // Limpa os quadrados
+                    const quadradosOcupados = Array.from(document.querySelectorAll(".quadrado-ocupado"));
+                    quadradosOcupados.forEach((quadrado) => {
+                        const imagem = quadrado.querySelector("img");
+                        quadrado.removeChild(imagem);
+                        const circle = document.createElement("div");
+                        circle.classList.add("circle");
+                        quadrado.appendChild(circle);
+                    });
+                    const quadradosComMinas = Array.from(document.querySelectorAll(".quadrado-mina"));
+                    quadradosComMinas.forEach((quadrado) => {
+                        quadrado.classList.remove("quadrado-mina");
+                    });
+                    const quadradosComTentativas = Array.from(document.querySelectorAll(".quadrado-tentativa"));
+                    quadradosComTentativas.forEach((quadrado) => {
+                        quadrado.classList.remove("quadrado-tentativa");
+                    });
+                }
+
+                function createFallingMoney() {
+                    const money = document.createElement('span');
+                    money.classList.add('falling-money');
+
+                    // Adicione os caracteres desejados no array
+                    const characters = ['$', '0', '1'];
+                    // Escolha um caractere aleatório do array
+                    const randomCharacter = characters[Math.floor(Math.random() * characters.length)];
+                    money.textContent = randomCharacter;
+
+                    const randomX = Math.floor(Math.random() * window.innerWidth);
+                    const randomDuration = 3 + Math.random() * 5;
+
+                    money.style.left = `${randomX}px`;
+                    money.style.animationDuration = `${randomDuration}s`;
+
+                    document.body.appendChild(money);
+
+                    setTimeout(() => {
+                        document.body.removeChild(money);
+                    }, randomDuration * 1000);
+                }
+                setInterval(createFallingMoney, 200);
+
+            </script>
+
+</html>
